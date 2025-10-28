@@ -17,7 +17,7 @@ We start at floor 0.
 
 - Read input as a string
 - Loop through each character:
-  - Add `+1` for `(`, `-1` for `)`
+  - Add `+1` for `(`, `-1` for `)`.
 - For Part 2, track the position where we reach floor -1
 
 ---
