@@ -13,7 +13,7 @@ We start at floor 0.
 
 ---
 
-## 💡 My Approach
+## 🧠 My Approach
 
 - Read input as a string
 - Loop through each character:
