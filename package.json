@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "solve": "ts-node scripts/run-day.ts",
+    "test:file": "jest",
     "test": "jest"
   },
   "keywords": [],
