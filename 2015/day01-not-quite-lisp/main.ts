@@ -31,6 +31,12 @@ export function findBasementEntryPosition(input: string): number {
   return -1;
 }
 
-const input = fs.readFileSync(`${__dirname}/input.txt`, "utf-8").trim();
-console.log("Final floor:", calculateFinalFloor(input));
-console.log("First position:", findBasementEntryPosition(input));
+export function main() {
+  const input = fs.readFileSync(`${__dirname}/input.txt`, "utf-8").trim();
+  console.log("Final floor:", calculateFinalFloor(input));
+  console.log("First position:", findBasementEntryPosition(input));
+}
+
+if (require.main === module) {
+  main();
+}

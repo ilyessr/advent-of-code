@@ -47,10 +47,16 @@ export const calculateTotalRibbon = (arr: number[][]): number => {
   return total;
 };
 
-const input = fs.readFileSync(`${__dirname}/input.txt`, "utf-8").trim();
-const boxes = parseDimensions(input);
-console.log(
-  "📦 Total wrapping paper needed:",
-  calculateTotalWrappingPaper(boxes)
-);
-console.log("🎗️ Total ribbon needed:", calculateTotalRibbon(boxes));
+export function main() {
+  const input = fs.readFileSync(`${__dirname}/input.txt`, "utf-8").trim();
+  const boxes = parseDimensions(input);
+  console.log(
+    "📦 Total wrapping paper needed:",
+    calculateTotalWrappingPaper(boxes)
+  );
+  console.log("🎗️ Total ribbon needed:", calculateTotalRibbon(boxes));
+}
+
+if (require.main === module) {
+  main();
+}

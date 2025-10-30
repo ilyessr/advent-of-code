@@ -41,9 +41,15 @@ export const countHousesWithRoboSanta = (directions: string): number => {
   return visited.size;
 };
 
-const data = fs.readFileSync(`${__dirname}/input.txt`, "utf-8").trim();
-console.log("Number of houses visited:", countHouses(data));
-console.log(
-  "Number of houses visited with Robo:",
-  countHousesWithRoboSanta(data)
-);
+export function main() {
+  const data = fs.readFileSync(`${__dirname}/input.txt`, "utf-8").trim();
+  console.log("Number of houses visited:", countHouses(data));
+  console.log(
+    "Number of houses visited with Robo:",
+    countHousesWithRoboSanta(data)
+  );
+}
+
+if (require.main === module) {
+  main();
+}
