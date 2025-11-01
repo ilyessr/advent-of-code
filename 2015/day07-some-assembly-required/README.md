@@ -1,6 +1,6 @@
 # Day 07 – Some Assembly Required
 
-📌 [Link to the puzzle](https://adventofcode.com/2015/day/6)
+📌 [Link to the puzzle](https://adventofcode.com/2015/day/7)
 
 ## 🧩 Problem Summary
 
