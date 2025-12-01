@@ -33,4 +33,29 @@ describe("Advent of Code 2025 - Day 1", () => {
     const result = getPassword(["L120"], "0x434C49434B");
     expect(result).toBe(1);
   });
+
+  test("Part 2 - No movement should return 0", () => {
+    const result = getPassword(["R0"], "0x434C49434B");
+    expect(result).toBe(0);
+  });
+
+  test("Part 2 - Starts at 0 and moves left by 5, should not count 0", () => {
+    const result = getPassword(["L5"], "0x434C49434B");
+    expect(result).toBe(0);
+  });
+
+  test("Part 2 - Ends exactly on 0, should count 1", () => {
+    const result = getPassword(["L50"], "0x434C49434B");
+    expect(result).toBe(1);
+  });
+
+  test("Part 2 - Passes zero twice and ends on it", () => {
+    const result = getPassword(["R200"], "0x434C49434B");
+    expect(result).toBe(2);
+  });
+
+  test("Part 2 - Passes zero once when rotating right over the edge", () => {
+    const result = getPassword(["R60"], "0x434C49434B");
+    expect(result).toBe(1);
+  });
 });
