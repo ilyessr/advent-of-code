@@ -1,49 +1,40 @@
 # Advent of Code – TypeScript Solutions
 
-This repository contains my personal solutions to [Advent of Code](https://adventofcode.com/), a series of daily programming puzzles created each December by Eric Wastl.
+Personal solutions to [Advent of Code](https://adventofcode.com/) written in **TypeScript**. This repo doubles as a daily algorithms practice log and a place to keep the code tidy, typed, and testable.
 
-I’m using **TypeScript** to solve the challenges as a way to practice algorithmic thinking, write clean code, and become more confident with types and JavaScript fundamentals.
+## What’s inside
+- Year folders (`2015`, `2025`, …) with one subfolder per day.
+- Each day usually has `main.ts`, optional `input.txt`, a short `README.md`, and `main.test.ts` for checks.
+- Scripts for running a puzzle day or the test suite.
 
----
-
-## Goals
-
-- Improve problem-solving skills through daily challenges
-- Build a habit of coding consistently
-- Practice writing clean, readable, and type-safe code
-- Explore TypeScript and functional patterns
-- Document my learning process
-
----
-
-## Repository Structure
-
-Each year is in a separate folder. Inside, each day has its own folder with a `main.ts` file and optionally input data or notes.
-
-Example:
-
+Example layout:
 ```yaml
-├── 2015
-│   └── day01-not-quite-lisp
-│       ├── README.md
-│       ├── input.txt
-│       ├── main.test.ts
-│       └── main.ts
+2015/
+  day01-not-quite-lisp/
+    README.md
+    input.txt
+    main.test.ts
+    main.ts
 ```
 
----
+## Getting started
+```bash
+npm install
+```
 
-## How to Run a Solution
-
-To run a specific solution using `ts-node`, use the following command:
-
+## Run a puzzle
 ```bash
 npm run solve -- <year> <day>
 ```
+Example: `npm run solve -- 2015 01`
 
-Example
-To run Day 1 of 2015:
-
+## Run tests
 ```bash
-npm run solve -- 2015 01
+npm test
 ```
+Use `npm test -- <pattern>` to target a specific file or day.
+
+## Goals
+- Stay sharp with daily problem solving
+- Keep code readable and type-safe
+- Capture lessons learned as I go
