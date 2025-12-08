@@ -1,21 +1,75 @@
-# Day XX – Puzzle Title 🎄
+# Day XX – Puzzle Title
 
-📌 [Link to the puzzle](https://adventofcode.com/YYYY/day/XX)
+[Puzzle](https://adventofcode.com/YYYY/day/XX)
 
-## 🧩 Problem Summary
+---
 
-_Short description of the challenge. What are we trying to calculate or find?_
+## Problem Summary
 
-## 🧠 My Approach
+---
 
-_How did you solve Part 1? What was my logic for Part 2?_
+## Shared Rules
 
-## 🔍 Observations
+-
+-
+-
 
-- Any edge cases?
-- Tricky parts?
-- Interesting patterns?
+---
 
-## ✅ What I Learned
+## Part 1 — Description
 
-_Typescript methods, functions, logic tricks, things i’d do differently next time..._
+### Approach
+
+-
+-
+-
+
+### Result
+
+**Part 1:**
+
+---
+
+## Part 2 — Description
+
+### Approach
+
+-
+-
+-
+
+### Result
+
+**Part 2:**
+
+---
+
+## Implementation Notes
+
+-
+-
+-
+
+---
+
+## What I Learned
+
+-
+-
+-
+
+---
+
+## Usage
+
+Run:
+
+```bash
+npm run solve -- YYYY XX
+```
+
+Test:
+
+```bash
+npm run solve -- YYYY XX
+```
